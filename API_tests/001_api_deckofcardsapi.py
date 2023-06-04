@@ -86,7 +86,7 @@ pics_score = r.json()["cards"]
 print(f'1th player.\n1th card: "{pics_score[0]["value"]}";\n2d card: "{pics_score[1]["value"]}";\n3d card: "{pics_score[2]["value"]}"')
 #TODO: Bad variable name
 total_1 = []
-#TODO: Code duplication, You can create config file, with JACK, QUEEN, KING, ACE values, since their API doesnt have that values.duplication
+#TODO: Code duplication, You can create config file, with JACK, QUEEN, KING, ACE values, since their API doesnt have that values.
 if len(pics_score[0]["value"]) < 3:
     total_1.append(int(pics_score[0]["value"]))
 elif type(pics_score[0]["value"]) != int:
